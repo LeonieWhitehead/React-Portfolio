@@ -13,7 +13,7 @@ const Project = ({ projects }) => {
   return (
     <div className="project">
       <h2>{title}</h2>
-      <img src={image} alt={title} />
+      <img src={image} alt="" />
       <p>
         Link: <a href={deployedLink} target="_blank" rel="noopener noreferrer">Deployed Version</a>
       </p>
