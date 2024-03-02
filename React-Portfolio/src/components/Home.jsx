@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Home = () => {
+const Home = (props) => {
   return (
-    <div className="home">
+    <div className="home text-center"style={{ backgroundImage: `url(${props.backgroundImage})` }}>
+    {props.children}
       <h1>Leonie Whitehead</h1>
       {/* headshot */}
       {/* brand statement */}

@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import CarouselImage from '../assets/istockphoto-1147544807-612x612.jpg';
+import CarouselImage from '../components/CarouselImage';
 
 
 const ProjectGallery = ({projects}) => {
@@ -9,7 +9,7 @@ const ProjectGallery = ({projects}) => {
       <Carousel>
       {projects.map((project) => (
         <Carousel.Item key={project.id}>
-          <CarouselImage text={project.title} />
+          <CarouselImage imageSrc={project.image} text={project.title} />
          {/* Additional project details in Carousel.Caption */}
          </Carousel.Item>
         ))}
