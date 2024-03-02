@@ -2,6 +2,7 @@ import React from 'react';
 import Project from './Project';
 import projectData from '../data/projects.json';
 
+
 const ProjectGallery = () => {
   return (
     <div className="project-gallery">
