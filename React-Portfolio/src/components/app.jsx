@@ -8,6 +8,7 @@
 
 import Navbar from './Navbar/Header'
 import '../styles/App.css'
+import Home from './Home/Home'
 
 
 function App (){
@@ -15,6 +16,7 @@ function App (){
     // <Router>
       <div className="App">
         <Navbar />
+        <Home />
         </div>
   );
 };

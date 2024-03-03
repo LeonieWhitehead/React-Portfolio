@@ -1,21 +1,21 @@
-import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import CarouselImage from '../components/CarouselImage';
+// import React from 'react';
+// import Carousel from 'react-bootstrap/Carousel';
+// import CarouselImage from '../components/CarouselImage';
 
 
-const ProjectGallery = ({projects}) => {
-  return (
-    <div className="project-gallery">
-      <Carousel>
-      {projects.map((project) => (
-        <Carousel.Item key={project.id}>
-          <CarouselImage imageSrc={project.image} text={project.title} />
-         {/* Additional project details in Carousel.Caption */}
-         </Carousel.Item>
-        ))}
-      </Carousel>
-    </div>
-  );
-};
+// const ProjectGallery = ({projects}) => {
+//   return (
+//     <div className="project-gallery">
+//       <Carousel>
+//       {projects.map((project) => (
+//         <Carousel.Item key={project.id}>
+//           <CarouselImage imageSrc={project.image} text={project.title} />
+//          {/* Additional project details in Carousel.Caption */}
+//          </Carousel.Item>
+//         ))}
+//       </Carousel>
+//     </div>
+//   );
+// };
 
-export default ProjectGallery;
+// export default ProjectGallery;
