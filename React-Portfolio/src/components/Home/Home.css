@@ -40,6 +40,18 @@
   height: 2rem;
 }
 
+.h-social-icons{
+  display: flex;
+  padding: 10px;
+}
+
+.h-icon{
+  cursor: pointer;
+  color: black;
+  width: 2rem;
+  height: 2rem;
+}
+
 .h-right{
   flex: 1;
 }

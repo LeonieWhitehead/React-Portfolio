@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 const Home = () => {
 return(
   <div className='homepage'>
@@ -11,24 +12,19 @@ return(
       </div>
 
       <button className='button h-button'>Hire me</button>
-      
-    </div>
-    <div className='h-right'></div>
 
+      <div className='h-social-icons'>
+      <a href="https://github.com/LeonieWhitehead" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><IoLogoGithub className='h-icon'/></a>
+
+      <a href="https://www.linkedin.com/in/leonie-whitehead/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><IoLogoLinkedin className='h-icon'/></a>
+      </div>
+    </div>
+    
+    <div className='h-right'>
     i am right side
+    </div>
   </div>
 )
 }
 
 export default Home;
-//   const backgroundImage = '/background.jpg';
-
-//   return (
-//     <div className="home text-center"style={{ backgroundImage: `url(${backgroundImage})` }}>
-//     {children}
-//       <h1>Hello, I'm Leonie<span role="img" aria-label="Waving Hand">👋</span></h1>
-//       {/* headshot */}
-//       <p>I'm a Front End Web Developer based in Manchester, England. I strive to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
-//     </div>
-// );
-// };
