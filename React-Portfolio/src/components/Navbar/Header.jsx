@@ -5,20 +5,40 @@ import "./header.css";
 const Navbar = () => {
   return (
     <>
-      <div className="n-wrapper">
+      <div className="n-wrapper navbar navbar-expand-lg navbar-light bg-white">
+      <div className="container-fluid">
         <div className="n-left">
           <div className="n-name">Leonie</div>
-          <span>toggle</span>
+          <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+          <span className="navbar-toggler-icon"></span>
+          </button>
         </div>
-        <div className="n-list">
-          <ul style={{ listStyleType: "none" }}>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/project-gallery">Project Gallery</Link></li>
-            <li>Portfolio</li>
-            <li>Testimonials</li>
-          </ul>
+        <div className="n-list collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/project-gallery" className="nav-link">
+                  Project Gallery
+                </Link>
+              </li>
+              <li className="nav-item">Portfolio</li>
+              <li className="nav-item">Testimonials</li>
+            </ul>
+          </div>
+          <button className="button n-button">Contact</button>
         </div>
-        <button className="button n-button">Contact</button>
       </div>
     </>
   );
