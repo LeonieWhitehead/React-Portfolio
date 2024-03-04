@@ -26,6 +26,9 @@ return(
     <div className='h-right'>
     <img src={Vector2} alt="" />
     <img src={Portrait} alt="" />
+    <div>
+      
+    </div>
     </div>
   </div>
 )

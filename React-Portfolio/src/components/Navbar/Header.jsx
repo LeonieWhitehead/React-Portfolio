@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 
 const Navbar = () => {
@@ -11,9 +12,8 @@ const Navbar = () => {
         </div>
         <div className="n-list">
           <ul style={{ listStyleType: "none" }}>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Experience</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/project-gallery">Project Gallery</Link></li>
             <li>Portfolio</li>
             <li>Testimonials</li>
           </ul>
