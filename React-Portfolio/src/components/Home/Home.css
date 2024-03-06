@@ -1,14 +1,10 @@
 .homepage{
-  display: flex;
-  height: 77vh;
   margin-top: 6rem;
 }
 
 .h-left{
-  flex: 1;
-  display: flex;
   position: relative;
-  flex-direction: column;
+  margin-top: 12rem;
 }
 
 .h-name{
@@ -59,6 +55,7 @@
 .h-right{
   flex: 1;
   position: relative;
+  margin-top: -2rem;
 }
 
 .h-right>*{
@@ -76,4 +73,23 @@
   top: -16%;
   left: 18%;
   transform: scale(0.52);
+}
+
+.container {
+  display: flex;
+  height: 77vh;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .h-left {
+    margin-top: 2rem;
+  }
+
+  .h-right {
+    margin-top: 2rem;
+  }
 }

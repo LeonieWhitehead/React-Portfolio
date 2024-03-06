@@ -1,9 +1,12 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import CarouselImage from './CarouselImage';
+import projectsData from '../../projects.json';
+import Project from '../Project';
 
 
 const ProjectGallery = ({projects}) => {
+  console.log(projects);
   return (
     <div className="project-gallery">
       <h2>Project Gallery</h2>

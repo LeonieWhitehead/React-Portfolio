@@ -1,0 +1,26 @@
+[
+  { "id": 1, 
+  "title": "Project 1", 
+  "image": "../assets/Placeholder.jpg"
+},
+{ "id": 2, 
+"title": "Project 2", 
+"image": "../assets/Placeholder.jpg"
+},
+{ "id": 3, 
+"title": "Project 3", 
+"image": "../assets/Placeholder.jpg"
+},
+{ "id": 4, 
+"title": "Project 4", 
+"image": "../assets/Placeholder.jpg"
+},
+{ "id": 5, 
+"title": "Project 5", 
+"image": "../assets/Placeholder.jpg" 
+},
+{ "id": 6, 
+"title": "Project 6", 
+"image": "../assets/Placeholder.jpg"
+}
+]
