@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import CarouselImage from './CarouselImage';
 import projectsData from '../../projects.json';
@@ -14,8 +15,9 @@ const ProjectGallery = ({projects}) => {
       <Carousel>
       {projects.map((project) => (
         <Carousel.Item key={project.id}>
+          <Link to={`/projects/${project.id}`}>
           <CarouselImage imageSrc={project.image} text={project.title} />
-         {/* Additional project details in Carousel.Caption */}
+          </Link>
          </Carousel.Item>
         ))}
       </Carousel>

@@ -12,7 +12,7 @@ const CarouselImage = ({ imageSrc, text }) => {
   const source = imageSrc || placeholderImage;
   return (
     <div>
-      <img src={imageSrc} alt="{text}" />
+      <img src={imageSrc} alt={text} />
       {/* Additional styling or content for Carousel.Image */}
     </div>
   );
