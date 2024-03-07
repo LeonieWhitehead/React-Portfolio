@@ -19,7 +19,7 @@ return (
         <Route path="/" element={<Home />} />
         <Route path="/project-gallery" element={<ProjectGallery projects={projectsData} />} />
         <Route path="/projects/:projectId" element={<Project />} />
-        <Route path="/contact-form" element={<ContactForm />} />
+        <Route path="/contact" element={<ContactForm />} />
         </Routes>
       </div>
     </Router>

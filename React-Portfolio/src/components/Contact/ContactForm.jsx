@@ -8,61 +8,43 @@ const ContactForm = () => {
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log('Form submitted:', formData);
+    const submissions = JSON.parse(localStorage.getItem('formSubmissions')) || [];
+    submissions.push(formData);
+    localStorage.setItem('formSubmissions', JSON.stringify(submissions));
 
     setFormData({
       name: '',
       email: '',
       message: '',
     });
+    alert('Form submitted successfully!');
   };
 
   return (
     <div className="contact-form">
-      <h2>Contact Form</h2>
+      <h2>Contact</h2>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-
-        <label htmlFor="message">Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
-
+        <label>
+          Name:
+          <input type="text" name="name" value={formData.name} onChange={handleChange} />
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" value={formData.email} onChange={handleChange} />
+        </label>
+        <label>
+          Message:
+          <textarea name="message" value={formData.message} onChange={handleChange} />
+        </label>
         <button type="submit">Submit</button>
       </form>
-      </div>
+    </div>
   );
 };
 

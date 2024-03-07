@@ -5,7 +5,7 @@ import "./header.css";
 const Navbar = () => {
   return (
     <>
-      <div className="n-wrapper navbar navbar-expand-lg navbar-light bg-white">
+      <nav className="n-wrapper navbar navbar-expand-lg navbar-light bg-white">
       <div className="container-fluid">
         <div className="n-left">
           <div className="n-name">Leonie</div>
@@ -39,9 +39,11 @@ const Navbar = () => {
               <li className="nav-item">Testimonials</li>
             </ul>
           </div>
-          <button className="button n-button">Contact</button>
-        </div>
+          <Link to="/contact" className="button n-button">
+          Contact
+        </Link>
       </div>
+    </nav>
     </>
   );
 };

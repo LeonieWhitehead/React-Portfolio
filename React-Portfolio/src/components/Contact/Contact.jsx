@@ -1,5 +1,6 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import ContactForm from './ContactForm';
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -8,13 +9,13 @@ const Contact = () => {
     navigate('/contact-form');
   };
 
-  return (
-    <div className="contact">
-      <h2>Contact</h2>
-      {/* Add contact information and form */}
-      <button onClick={handleContactClick}>Go to Contact Form</button>
+  const Contact = () => {
+    return (
+      <div className="contact">
+        <h2>Contact</h2>
+        <ContactForm />
       </div>
-  );
-};
-
-export default Contact;
+    );
+  };
+}
+  export default Contact;
