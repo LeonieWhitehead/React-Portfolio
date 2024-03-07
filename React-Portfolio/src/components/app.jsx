@@ -7,6 +7,7 @@ import Home from './Home/Home'
 import ProjectGallery from './ProjectGallery/ProjectGallery';
 import projectsData from '../projects.json';
 import Project from './Project'
+import ContactForm from './Contact/ContactForm';
 
 const App =() => {
 
@@ -18,6 +19,7 @@ return (
         <Route path="/" element={<Home />} />
         <Route path="/project-gallery" element={<ProjectGallery projects={projectsData} />} />
         <Route path="/projects/:projectId" element={<Project />} />
+        <Route path="/contact-form" element={<ContactForm />} />
         </Routes>
       </div>
     </Router>
