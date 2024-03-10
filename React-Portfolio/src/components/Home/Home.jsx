@@ -15,7 +15,7 @@ return(
         <span>A Front End Web Developer who strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</span>
       </div>
 
-      <button className='btn h-button mt-3'>Portfolio</button>
+      <button className='h-button mt-3'>Portfolio</button>
 
       <div className='h-social-icons mt-3'>
       <a href="https://github.com/LeonieWhitehead" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><IoLogoGithub className='h-icon'/></a>
@@ -26,7 +26,7 @@ return(
 
     <div className='col-md-6'>
     <img src={Vector2} alt="" className="img-fluid" />
-    <img src={Portrait} alt="" className="img-fluid" />
+    {/* <img src={Portrait} alt="" className="img-fluid h-portrait" /> */}
     </div>
       
     </div>

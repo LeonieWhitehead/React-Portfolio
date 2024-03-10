@@ -6,16 +6,17 @@ import projectsData from '../../projects.json';
 import Project from '../Project';
 
 
-const ProjectGallery = ({projects}) => {
-  console.log(projects);
+const ProjectGallery = () => {
+  
   return (
     <div className="project-gallery">
       <h2>Project Gallery</h2>
-       {projects && projects.length > 0 ? (
+      {projectsData && projectsData.length > 0 ? (
       <Carousel>
-      {projects.map((project) => (
+      {projectsData.map((project) => (
         <Carousel.Item key={project.id}>
           <Link to={`/projects/${project.id}`}>
+            
           <CarouselImage imageSrc={project.image} text={project.title} />
           </Link>
          </Carousel.Item>

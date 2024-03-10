@@ -8,6 +8,7 @@ import ProjectGallery from './ProjectGallery/ProjectGallery';
 import projectsData from '../projects.json';
 import Project from './Project'
 import ContactForm from './Contact/ContactForm';
+import '../styles/global.css';
 
 const App =() => {
 
