@@ -1,26 +1,45 @@
 [
   { "id": 1, 
-  "title": "Project 1", 
-  "image": "../assets/Placeholder.jpg"
+  "title": "Delish Discoveries", 
+  "deployedLink": "https://rossne99.github.io/Delish-Discoveries/",
+  "githubLink": "https://github.com/RossNE99/Delish-Discoveries?tab=readme-ov-file",
+  "image": "src/components/assets/DelishDiscoveries.png",
+  "description": "Recipe app with nutrion info and shopping list"
 },
+
 { "id": 2, 
-"title": "Project 2", 
-"image": "../assets/Placeholder.jpg"
+"title": "Console Finances", 
+"deployedLink": "https://leoniewhitehead.github.io/Console-Finances/",
+  "githubLink": "https://github.com/LeonieWhitehead/Console-Finances",
+  "image": "src/components/assets/ConsoleFinances.png",
+  "description": "Calculate finances in the console with a budget tracker"
 },
 { "id": 3, 
-"title": "Project 3", 
-"image": "../assets/Placeholder.jpg"
+"title": "Work Day Scheduler", 
+"deployedLink": "https://leoniewhitehead.github.io/Daily-Scheduler/",
+  "githubLink": "https://github.com/LeonieWhitehead/Daily-Scheduler?tab=readme-ov-file",
+  "image": "src/components/assets/WorkDayScheduler.png",
+  "description": "Schedule appointments throughout the day with this scheduler"
 },
 { "id": 4, 
-"title": "Project 4", 
-"image": "../assets/Placeholder.jpg"
+"title": "JavaScript Code Quiz", 
+"deployedLink": "https://leoniewhitehead.github.io/JavaScript-Code-Quiz/",
+  "githubLink": "https://github.com/LeonieWhitehead/JavaScript-Code-Quiz",
+  "image": "src/components/assets/JavaScriptCodeQuiz.png",
+  "description": "Take a quiz to test your JavaScript knowledge"
 },
 { "id": 5, 
-"title": "Project 5", 
-"image": "../assets/Placeholder.jpg" 
+"title": "Password Generator", 
+"deployedLink": "https://leoniewhitehead.github.io/passwordGeneratorProject/",
+  "githubLink": "https://github.com/username/project1",
+  "image": "src/components/assets/PasswordGenerator.png",
+  "description": "Generate a random password based on user-selected criteria"
 },
 { "id": 6, 
-"title": "Project 6", 
-"image": "../assets/Placeholder.jpg"
+"title": "Bootstrap Portfolio", 
+"deployedLink": "https://leoniewhitehead.github.io/Bootstrap-Portfolio/",
+  "githubLink": "https://github.com/LeonieWhitehead/Bootstrap-Portfolio",
+  "image": "src/components/assets/BootstrapPortfolio.png",
+  "description":"Portfolio built with Bootstrap"
 }
 ]

@@ -16,12 +16,15 @@ const ProjectGallery = () => {
       {projectsData.map((project) => (
         <Carousel.Item key={project.id}>
           <Link to={`/projects/${project.id}`}>
-            
-          <CarouselImage imageSrc={project.image} text={project.title} />
-          </Link>
-         </Carousel.Item>
-        ))}
-      </Carousel>
+          <img src={project.image} alt={project.title} />
+                <Carousel.Caption>
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                </Carousel.Caption>
+              </Link>
+            </Carousel.Item>
+          ))}
+        </Carousel>
       ) : (
         <p>No projects available.</p>
       )}
